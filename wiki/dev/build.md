@@ -50,16 +50,14 @@ The next major version is based on `babel` and `flow`. If you switch from master
 script | Description 
 --- | --- | 
 **flow** | run flow check
-**dev:start** | transpile and run `verdaccio` with `babel-node` on hot.
+**dev:start** | run `babel-node` and transpile code on memory
 **code:build** | transpile `verdaccio` with `babel` and  copy transpiled code to `build/`
 release | this script is used to generate changelog and raise up the version according the commits messages
 prepublish | it ensures before publish the new ui is being generated
-test | run all the test 
+test | run all the test `jest`
 pre:ci | specific task for CI, build the UI required for test
 test:ci | run test generating coverage
 test:only | run only test
-test:coverage | run `nyc` as a wrapper to generate coverage with mocha test
-coverage:html | run `nyc` to generate coverage reports
 coverage:publish | publish on `codecov` the coverage (don't use it)
 lint | run the linting for javascript code.
 lint:css | run the linter for `css`
